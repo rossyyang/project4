@@ -4,7 +4,7 @@
   "scripts": {
     "build": "npm run  && eleventy",
     "start": "npm run watch:sass && eleventy --serve",
-    "build:sass":
+    "build:sass": "sass --load-path='./node_modules' --no-source-map sass/styles.scss:css/styles.css",
     "watch:sass": "sass --load-path='./node_modules' --no-source-map --watch sass/styles.scss:css/styles.css",
     "watch": "npm run watch:sass"
   },
