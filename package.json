@@ -2,8 +2,9 @@
   "name": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "eleventy",
-    "start": "eleventy --serve",
+    "build": "npm run  && eleventy",
+    "start": "npm run watch:sass && eleventy --serve",
+    "build:sass":
     "watch:sass": "sass --load-path='./node_modules' --no-source-map --watch sass/styles.scss:css/styles.css",
     "watch": "npm run watch:sass"
   },
