@@ -3,7 +3,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("default", "default.liquid");
   eleventyConfig.addWatchTarget("./src/css/");
-  eleventyConfig.setTemplateFormats(["css"]);
+  eleventyConfig.setTemplateFormats(["css", "html", "liquid"]);
 
   return {
     dir: {

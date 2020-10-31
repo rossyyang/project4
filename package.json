@@ -1,4 +1,6 @@
 {
+  "description": "GD 431 Project 4",
+  "private": true,
   "engines": {
     "node": "10.x"
   },
