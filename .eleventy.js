@@ -2,6 +2,7 @@
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/css/");
+  eleventyConfig.addLayoutAlias("default", "default.liquid");
 
   return {
     dir: {
