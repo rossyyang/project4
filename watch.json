@@ -1,19 +1,10 @@
 {
   "install": {
-    "include": [
-      "^package\\.json$",
-      "^\\.env$"
-    ]
+    "include": ["^package\\.json$", "^\\.env$"]
   },
   "restart": {
-    "exclude": [
-      "^src/",
-      "^dist/"
-    ],
-    "include": [
-      "watch.json$",
-      ".eleventy.js$"
-    ]
+    "exclude": ["^src/", "^dist/"],
+    "include": ["watch.json$", ".eleventy.js$"]
   },
   "throttle": 1000
 }

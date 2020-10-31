@@ -2,15 +2,16 @@
   "name": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run  && eleventy",
-    "start": "npm run watch:sass && eleventy --serve",
-    "build:sass": "sass --load-path='./node_modules' --no-source-map sass/styles.scss:css/styles.css",
-    "watch:sass": "sass --load-path='./node_modules' --no-source-map --watch sass/styles.scss:css/styles.css",
-    "watch": "npm run watch:sass"
+    "build": "run-s build:sass build:eleventy",
+    "start": "run-p watch:sass watch:eleventy",
+    "build:eleventy": "eleventy",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass --load-path='./node_modules' --no-source-map src/sass/styles.scss:src/css/styles.css",
+    "watch:sass": "sass --load-path='./node_modules' --no-source-map --watch src/sass/styles.scss:src/css/styles.css"
   },
   "dependencies": {
+    "npm-run-all": "^4.1.5",
     "@11ty/eleventy": "^0.11.1",
     "sass": "^1.27.2"
-  },
-  "license": "MIT"
+  }
 }
