@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      includes: "_partials",
+      includes: "_includes",
       layouts: "_layouts",
       input: "src",
       output: "dist"
