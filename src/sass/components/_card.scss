@@ -1,8 +1,16 @@
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
+  border-top: 2px solid $color-slate;
   margin-bottom: 12px;
+  overflow: hidden;
   padding: 12px;
   position: relative;
   transition: $transition-default;
+  min-width: 320px;
 
   &-content {
     position: relative;
@@ -31,29 +39,20 @@
     border-bottom: 2px solid $color-grey;
   }
 
-  $patterns: "signal",
-  "flip-diamonds",
-  "overlap-hex",
-  "pie-factory",
-  "jupiter";
-
-  @each $patt in $patterns {
-    $i: index($patterns, $patt);
-
-    &:nth-of-type(#{$i}) {
-      @include pattern(#{$patt});
-    }
-  }
-
-  &::before {
+  &::before,
+  &::after {
     content: "";
-    opacity: 0.4;
     pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    transition: $transition-default;
+  }
+
+  &::before {
+    opacity: 0.4;
   }
 
   &:nth-child(even) {
@@ -68,12 +67,30 @@
     }
   }
 
-  &:hover {
-    background-size: 10%;
+  $patterns: "signal",
+  "flip-diamonds",
+  "overlap-hex",
+  "pie-factory",
+  "jupiter";
 
-    &::before {
-      opacity: 0.6;
+  @each $patt in $patterns {
+    $i: index($patterns, $patt);
+
+    &:nth-of-type(#{$i})::after {
+      @include pattern(#{$patt});
     }
   }
 
+
+  &:hover {
+    &::before {
+      opacity: 0.76;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      &::after {
+        transform: scale(1.13);
+      }
+    }
+  }
 }
