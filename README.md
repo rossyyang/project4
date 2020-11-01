@@ -6,4 +6,3 @@ This demo will cover:
 - Includes
 - [Liquid](https://shopify.github.io/liquid/) syntax
 - Sass partials
-

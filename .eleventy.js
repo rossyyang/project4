@@ -1,7 +1,7 @@
 // docs: https://www.11ty.io/docs/config/
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addLayoutAlias("default", "default.liquid");
+  eleventyConfig.addLayoutAlias("default", "default.html");
   eleventyConfig.addWatchTarget("./src/css/");
   eleventyConfig.setTemplateFormats(["css", "html", "liquid"]);
 
