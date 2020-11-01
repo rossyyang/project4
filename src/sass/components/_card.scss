@@ -2,6 +2,7 @@
   margin-bottom: 12px;
   padding: 12px;
   position: relative;
+  transition: $transition-default;
 
   &-content {
     position: relative;
@@ -26,15 +27,27 @@
     text-transform: uppercase;
   }
 
-  &-byline {}
-
   &-category {
     border-bottom: 2px solid $color-grey;
   }
 
+  $patterns: "signal",
+  "flip-diamonds",
+  "overlap-hex",
+  "pie-factory",
+  "jupiter";
+
+  @each $patt in $patterns {
+    $i: index($patterns, $patt);
+
+    &:nth-of-type(#{$i}) {
+      @include pattern(#{$patt});
+    }
+  }
+
   &::before {
     content: "";
-    opacity: 0.3;
+    opacity: 0.4;
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -45,27 +58,22 @@
 
   &:nth-child(even) {
     &::before {
-      background: linear-gradient(-150deg, transparent 30%, $color-yellow);
+      background: linear-gradient(-150deg, transparent, $color-yellow);
     }
   }
 
   &:nth-child(odd) {
     &::before {
-      background: linear-gradient(-150deg, transparent 30%, $color-mint);
+      background: linear-gradient(-150deg, transparent, $color-mint);
     }
   }
-}
 
-$patterns: "signal",
-"flip-diamonds",
-"overlap-hex",
-"pie-factory",
-"jupiter";
+  &:hover {
+    background-size: 10%;
 
-@each $patt in $patterns {
-  $i: index($patterns, $patt);
-
-  .card:nth-of-type(#{$i}) {
-    @include pattern(#{$patt});
+    &::before {
+      opacity: 0.6;
+    }
   }
+
 }
