@@ -90,13 +90,13 @@ $card-gap: 12px;
 
   &:nth-child(even) {
     &::before {
-      background: linear-gradient(-150deg, transparent, $color-yellow);
+      background: linear-gradient(130deg, $color-yellow, white);
     }
   }
 
   &:nth-child(odd) {
     &::before {
-      background: linear-gradient(-150deg, transparent, $color-mint);
+      background: linear-gradient(130deg, $color-mint, white);
     }
   }
 
@@ -119,7 +119,7 @@ $card-gap: 12px;
 
   &:hover {
     &::before {
-      opacity: 0.76;
+      opacity: 0.88;
     }
 
     @media (prefers-reduced-motion: no-preference) {

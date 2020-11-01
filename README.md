@@ -5,3 +5,5 @@ This demo will cover:
 - Layout files
 - Includes
 - [Liquid](https://shopify.github.io/liquid/) syntax
+- Sass partials
+
