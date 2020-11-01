@@ -1,9 +1,56 @@
----
-pageTitle: Home
-layout: default
-tags: nav
-order: 1
----
+<!doctype html>
+<html lang="en">
 
-<h2>{{ pageTitle }}</h2>
-<p>This content comes from this file: <code>index.html</code></p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home</title>
+
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&family=IBM+Plex+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <header class="site-header">
+      <h1 class="site-name">Eleventy Demo Site</h1>
+    </header>
+
+    <nav class="site-nav">
+      <ul class="u-list-reset">
+        <li aria-current="page">
+          <a href="/">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="/links/">
+            Links
+          </a>
+        </li>
+
+        <li>
+          <a href="/contact/">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Home</h2>
+      <p>All of the content you see here comes from this file: <code>index.html</code></p>
+    </main>
+
+    <footer class="site-footer">
+      <p>Part of my <a href="https://mica-web.github.io">Learning Web Design</a> curriculum.</p>
+      <p>Remix the <a href="https://glitch.com/edit/#!/remix/mica-11ty-demo-start">starter project</a> on Glitch to follow along with my tutorial or <a href="https://glitch.com/edit/#!/mica-11ty-demo-final">view the code for this finished project</a>.</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
