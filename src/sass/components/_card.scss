@@ -1,16 +1,31 @@
+$card-gap: 12px;
+
 .cards-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -$card-gap;
+  margin-right: -$card-gap;
 }
 
 .card {
+  border-radius: 0 0 6px 6px;
   border-top: 2px solid $color-slate;
-  margin-bottom: 12px;
+  margin: $card-gap;
   overflow: hidden;
   padding: 12px;
   position: relative;
   transition: $transition-default;
-  min-width: 320px;
+
+  @media (max-width: 679px) {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media (min-width: 680px) {
+    flex: 1 0 auto;
+    max-width: 280px;
+  }
 
   &-content {
     position: relative;
