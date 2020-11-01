@@ -10,7 +10,7 @@ $card-gap: 12px;
 
 .card {
   border-radius: 0 0 6px 6px;
-  border-top: 2px solid $color-slate;
+  border-top: 3px solid $color-slate;
   margin: $card-gap;
   overflow: hidden;
   position: relative;
@@ -68,7 +68,7 @@ $card-gap: 12px;
   }
 
   &-category {
-    border-bottom: 2px solid $color-grey;
+    border-bottom: 2px solid white;
     width: min-content;
   }
 
@@ -106,10 +106,12 @@ $card-gap: 12px;
   "pie-factory",
   "jupiter";
 
+  $patt-length: length($patterns);
+
   @each $patt in $patterns {
     $i: index($patterns, $patt);
 
-    &:nth-of-type(#{$i}n)::after {
+    &:nth-of-type(#{$patt-length}n + #{$i})::after {
       @include pattern(#{$patt});
     }
   }
