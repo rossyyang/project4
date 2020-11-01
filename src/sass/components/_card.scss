@@ -54,21 +54,18 @@
       background: linear-gradient(-150deg, transparent 30%, $color-mint);
     }
   }
+}
 
-  $patterns: "patt-signal",
-  "patt-flip-diamonds",
-  "patt-overlap-hex",
-  "patt-pie-factory",
-  "patt-jupiter";
+$patterns: "signal",
+"flip-diamonds",
+"overlap-hex",
+"pie-factory",
+"jupiter";
 
-  &:nth-of-type(1) {
-    color: rebeccapurple;
-  }
+@each $patt in $patterns {
+  $i: index($patterns, $patt);
 
-  @each $patt,
-  $i in $patterns {
-    &:nth-of-type(#{$i}) {
-      color: red;
-    }
+  .card:nth-of-type(#{$i}) {
+    @include pattern(signal);
   }
 }
