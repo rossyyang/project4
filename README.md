@@ -5,4 +5,6 @@ This demo will cover:
 - Layout files
 - Includes
 - [Liquid](https://shopify.github.io/liquid/) syntax
+- [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
 - Sass partials
+- Troubleshooting your Eleventy project on Glitch
