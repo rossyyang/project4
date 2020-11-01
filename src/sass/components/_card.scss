@@ -44,11 +44,15 @@
   }
 
   &:nth-child(even) {
-    background: linear-gradient(-150deg, transparent 30%, $color-yellow);
+    &::before {
+      background: linear-gradient(-150deg, transparent 30%, $color-yellow);
+    }
   }
 
   &:nth-child(odd) {
-    background: linear-gradient(-150deg, transparent 30%, $color-mint);
+    &::before {
+      background: linear-gradient(-150deg, transparent 30%, $color-mint);
+    }
   }
 
   $patterns: "patt-signal",
@@ -57,10 +61,14 @@
   "patt-pie-factory",
   "patt-jupiter";
 
-  @each $pattern,
+  &:nth-of-type(1) {
+    color: rebeccapurple;
+  }
+
+  @each $patt,
   $i in $patterns {
-    &:nth-child($i) {
-      @include #{$pattern};
+    &:nth-of-type(#{$i}) {
+      color: red;
     }
   }
 }
