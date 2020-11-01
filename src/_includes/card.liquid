@@ -1,7 +1,11 @@
+{%- for item in links.items -%}
+
 <li class="card card-cat">
   <div class="card-content">
-    <span class="card-category">Category</span>
-    <h4 class="card-title"><a href="#">Title</a></h4>
-    <span class="card-byline">By Author</span>
+    <span class="card-category">{{ item.category }}</span>
+    <h2 class="card-title"><a href="#">{{ item.title }}</a></h2>
+    <span class="card-byline">By {{ item.author }}</span>
   </div>
 </li>
+
+{%- endfor -%}

@@ -24,7 +24,8 @@ $card-gap: 12px;
 
   @media (min-width: 680px) {
     flex: 1 0 auto;
-    max-width: 280px;
+    max-width: 35%;
+    // max-width: 280px;
   }
 
   &-content {
@@ -91,7 +92,7 @@ $card-gap: 12px;
   @each $patt in $patterns {
     $i: index($patterns, $patt);
 
-    &:nth-of-type(#{$i})::after {
+    &:nth-of-type(#{$i}n)::after {
       @include pattern(#{$patt});
     }
   }
