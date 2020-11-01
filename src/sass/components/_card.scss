@@ -66,6 +66,6 @@ $patterns: "signal",
   $i: index($patterns, $patt);
 
   .card:nth-of-type(#{$i}) {
-    @include pattern(signal);
+    @include pattern(#{$patt});
   }
 }
