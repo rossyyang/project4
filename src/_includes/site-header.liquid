@@ -1,3 +1,7 @@
 <header class="site-header">
-  Header
+  {%- if page.url == "/"  -%}
+  <h1 class="site-name">{{ siteData.name }}</h1>
+  {%- else -%}
+  <span class="site-name">{{ siteData.name }}</span>
+  {%- endif -%}
 </header>
