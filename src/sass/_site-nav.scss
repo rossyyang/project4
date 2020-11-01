@@ -1,5 +1,28 @@
 .site-nav {
+  background-color: $color-grey;
+
   ul {
     display: flex;
+    justify-content: flex-end;
+  }
+
+  a {
+    border-bottom: 4px solid transparent;
+    color: $color-text-body;
+    display: block;
+    margin-bottom: -4px;
+    padding: 12px;
+    text-decoration: none;
+    transition: $transition-default;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $color-text-body;
+    }
+  }
+
+  [aria-current] a {
+    border-bottom-color: $color-mint;
+    cursor: default;
   }
 }
