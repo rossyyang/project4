@@ -1,0 +1,13 @@
+.card {
+  &-title {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-byline {}
+
+  &-category {
+    text-transform: uppercase;
+  }
+}
