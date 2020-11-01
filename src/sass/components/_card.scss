@@ -1,4 +1,8 @@
 .card {
+  @include patt-corkscrew;
+  padding: 12px;
+  position: relative;
+
   &-title {
     a {
       text-decoration: none;
@@ -8,6 +12,17 @@
   &-byline {}
 
   &-category {
+    border-bottom: 2px solid $color-grey;
     text-transform: uppercase;
+  }
+
+  &::after {
+    background: linear-gradient(to right, transparent, $color-yellow);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 }
