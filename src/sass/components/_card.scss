@@ -5,20 +5,30 @@
 
   &-title {
     a {
+      font-size: 22px;
       text-decoration: none;
     }
+  }
+
+  &-byline,
+  &-category {
+    font-family: $font-mono;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 
   &-byline {}
 
   &-category {
     border-bottom: 2px solid $color-grey;
-    text-transform: uppercase;
   }
 
-  &::after {
-    background: linear-gradient(to right, transparent, $color-yellow);
-    content: '';
+  &::before {
+    background: linear-gradient(-150deg, transparent, $color-yellow);
+    content: "";
+    opacity: 0.5;
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
