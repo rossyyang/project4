@@ -1,8 +1,9 @@
 <ul>
-  {%- for nav in collections.nav -%}
-  <li{% if page.url == nav.url %} aria-current="page" {% endif %}>
-    <a href="{{nav.url}}">
-      {{ nav.data.pageTitle }}
+  {% assign nav = collections.nav | sortByPageOrder %}
+  {%- for item in nav -%}
+  <li{% if page.url == item.url %} aria-current="page" {% endif %}>
+    <a href="{{item.url}}">
+      {{ item.data.pageTitle }}
     </a>
     </li>
     {%- endfor -%}
