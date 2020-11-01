@@ -1,10 +1,12 @@
-<ul class="u-list-reset">
-  {%- assign nav = collections.nav | sortByPageOrder -%}
-  {%- for item in nav -%}
-  <li{% if page.url == item.url %} aria-current="page" {% endif %}>
-    <a href="{{item.url}}">
-      {{ item.data.pageTitle }}
-    </a>
-    </li>
-    {%- endfor -%}
-</ul>
+<nav class="site-nav">
+  <ul class="u-list-reset">
+    {%- assign nav = collections.nav | sortByPageOrder -%}
+    {%- for item in nav -%}
+    <li{% if page.url == item.url %} aria-current="page" {% endif %}>
+      <a href="{{item.url}}">
+        {{ item.data.pageTitle }}
+      </a>
+      </li>
+      {%- endfor -%}
+  </ul>
+</nav>
