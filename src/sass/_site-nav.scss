@@ -6,23 +6,33 @@
     justify-content: flex-end;
   }
 
+  li {
+    border-bottom: 5px solid $color-yellow;
+
+    +li {
+      a {
+        margin-left: 4px;
+      }
+    }
+  }
+
   a {
-    border-bottom: 4px solid transparent;
+    border-bottom: 2px dashed transparent;
     color: $color-text-body;
     display: block;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
     padding: 12px;
     text-decoration: none;
     transition: $transition-default;
 
     &:hover,
     &:focus {
-      border-bottom-color: $color-text-body;
+      border-bottom-color: rgba($color-slate, 70%);
     }
   }
 
   [aria-current] a {
-    border-bottom-color: $color-mint;
+    border-bottom-color: $color-slate;
     cursor: default;
   }
 }
