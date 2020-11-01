@@ -2,13 +2,11 @@
 layout: base.liquid
 ---
 
-<header>
-  Header
-</header>
-{% include nav.liquid %}
+{% include site-header.liquid %}
+{% include site-nav.liquid %}
+
 <main>
   {{ content | safe }}
 </main>
-<footer>
-  Footer
-</footer>
+
+{% include site-footer.liquid %}

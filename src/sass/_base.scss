@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-grey;
+  color: $color-text-body;
+  font-family: 'Commissioner', sans-serif;
+  margin: 0;
+}
