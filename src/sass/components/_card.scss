@@ -51,11 +51,16 @@
     background: linear-gradient(-150deg, transparent 30%, $color-mint);
   }
 
-  $patterns: "signal", "flip-diamonds", "overlap-hex", "pie-factory", "jupiter";
+  $patterns: "patt-signal",
+  "patt-flip-diamonds",
+  "patt-overlap-hex",
+  "patt-pie-factory",
+  "patt-jupiter";
 
-  @for $i from 1 through legnth($patterns) {
+  @each $pattern,
+  $i in $patterns {
     &:nth-child($i) {
-      @include #{nth($pattern, $i)};
+      @include #{$pattern};
     }
   }
 }

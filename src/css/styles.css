@@ -1,9 +1,9 @@
 /* Error: Expected identifier.
  *    ,
- * 58 |       @include #{nth($pattern, $i)};
+ * 63 |       @include #{$pattern};
  *    |                ^
  *    '
- *   src/sass/components/_card.scss 58:16      @import
+ *   src/sass/components/_card.scss 63:16      @import
  *   src/sass/components/_components.scss 1:9  @import
  *   src/sass/styles.scss 6:1                  root stylesheet */
 
@@ -15,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected identifier.\a    \2577 \a 58 \2502        @include #{nth($pattern, $i)};\a    \2502                 ^\a    \2575 \a   src/sass/components/_card.scss 58:16      @import\a   src/sass/components/_components.scss 1:9  @import\a   src/sass/styles.scss 6:1                  root stylesheet";
+  content: "Error: Expected identifier.\a    \2577 \a 63 \2502        @include #{$pattern};\a    \2502                 ^\a    \2575 \a   src/sass/components/_card.scss 63:16      @import\a   src/sass/components/_components.scss 1:9  @import\a   src/sass/styles.scss 6:1                  root stylesheet";
 }
