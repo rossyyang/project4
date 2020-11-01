@@ -5,51 +5,45 @@
     "url": "https://css-tricks.com/jamstack-fugu-and-houdini/"
   },
   {
-    "title": "",
+    "title": "How Building in the Open Can Change Our Industry",
     "author": "Amina Adewusi",
-    "category": "",
-    "url": ""
+    "category": "Diversity",
+    "url": "https://css-tricks.com/how-building-in-the-open-can-change-our-industry/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
+    "title": "Teaching CSS",
+    "author": "Rachel Andrew",
+    "category": "CSS",
+    "url": "https://css-tricks.com/teaching-css/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
+    "title": "The future is bright, because the future is static",
+    "author": "Andy Bell",
+    "category": "JAMstack",
+    "url": "https://css-tricks.com/the-future-is-bright-because-the-future-is-static/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
+    "title": "It’s my job, and yours",
+    "author": "Stacy Kvernmo",
+    "category": "Ethics",
+    "url": "https://css-tricks.com/its-my-job-and-yours/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
+    "title": "Growing Accessibility Conversations",
+    "author": "Christopher Schmitt",
+    "category": "a11y",
+    "url": "https://css-tricks.com/growing-accessibility-conversations/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
+    "title": "We are Programmers",
+    "author": "Lara Schenck",
+    "category": "CSS",
+    "url": "https://css-tricks.com/we-are-programmers/"
   },
   {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
-  },
-  {
-    "title": "",
-    "author": "",
-    "category": "",
-    "url": ""
-  },
+    "title": "Embracing the Universal Web",
+    "author": "Miriam Suzanne",
+    "category": "CSS",
+    "url": "https://css-tricks.com/embracing-the-universal-web/"
+  }
 ]
