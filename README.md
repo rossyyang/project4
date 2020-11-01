@@ -7,4 +7,4 @@ This demo will cover:
 - Sass partials
 - Troubleshooting your Eleventy project on Glitch
 
-
+See [this Glitch project](https://glitch.com/~mica-11ty-demo-final) for the end result of this demo.
