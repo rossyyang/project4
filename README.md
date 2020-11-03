@@ -5,6 +5,7 @@ This demo will cover:
 - Layout files: Advanced
 - Includes: Basics
 - Sass partials
+- Collections
 - Includes: Advanced
 - Troubleshooting your Eleventy project on Glitch
 
