@@ -1,0 +1,18 @@
+.back-link {
+  border: 2px solid $color-slate;
+  border-radius: 6px;
+  color: $color-text-body;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 24px;
+  padding: 8px 12px;
+  text-decoration: none;
+  transition: $transition-default;
+
+  &:hover,
+  &:focus {
+    background-color: $color-yellow;
+  }
+}
