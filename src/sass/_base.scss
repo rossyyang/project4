@@ -9,24 +9,29 @@ html {
 }
 
 body {
-  background-image: url(https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fbs-img1.jpg?v=1605829317131);
   color: $color-text-body;
   font-family: "Commissioner", sans-serif;
   font-weight: 400;
   margin: 0;
+  height: 100vh;
 }
 
 .sidenav {
   background-color: $color-grey;
   position: fixed;
   height: 100%;
-  width: 20%;
+  width: 30%;
   top: 0;
   left: 0;
   color: $color-offwhite;
+  padding-top: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 main {
   flex: 1 0 auto;
-  padding: 24px 18px;
+  padding-left: 30%;
+  background-image: url(https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fbs-img1.jpg?v=1605829317131);
+  height: 100vh;
 }
