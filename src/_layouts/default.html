@@ -12,44 +12,29 @@
 </head>
 
 <body>
-  <div class="site-wrapper">
-
-    <header class="site-header">
-      <h1 class="site-name">Eleventy Demo Site</h1>
-    </header>
-
-    <nav class="site-nav">
-      <ul class="u-list-reset">
-        <li>
-          <a href="/">
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a href="/links/">
-            Links
-          </a>
-        </li>
-
-        <li>
-          <a href="/contact/">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-  {{ content | safe }}
-    </main>
-
-    <footer class="site-footer">
-      <p>Part of my <a href="https://mica-web.github.io">Learning Web Design</a> curriculum.</p>
-      <p>Remix the <a href="https://glitch.com/edit/#!/remix/mica-11ty-demo-start">starter project</a> on Glitch to follow along with my tutorial or <a href="https://glitch.com/edit/#!/mica-11ty-demo-final">view the code for this finished project</a>.</p>
-    </footer>
-
+  <div class="sidenav">
+		<div class="mainnav">
+	  		<a href="#home"> <img src="https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fblacksauce.png?v=1605829269133"> </a>
+	  		<a href="#about"> about </a>
+	  		<a href="#order"> order </a>
+	  		<a href="#biscuit"> biscuit talk </a>
+	  		<a href="#contact"> contact us </a>
+	  	</div>
+	  	<div class="info">
+	  		<h4> Baltimore, MD </h4>
+	  		<h4> info@blacksaucekitchen.com </h4>
+	  	</div>
+	  	<div class="social">
+	  		<a href="#facebook"> img </a>
+	  		<a href="#insta"> img </a>
+	  		<a href="#uncmn"> img </a>
+	  	</div>
+    </div>
   </div>
-</body>
 
+	<main>
+		{{ content | safe }}
+	</main>
+
+</body>
 </html>

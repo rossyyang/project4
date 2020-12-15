@@ -9,11 +9,21 @@ html {
 }
 
 body {
-  background-color: $color-grey;
+  background-image: url(https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fbs-img1.jpg?v=1605829317131);
   color: $color-text-body;
   font-family: "Commissioner", sans-serif;
   font-weight: 400;
   margin: 0;
+}
+
+.sidenav {
+  background-color: $color-grey;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  left: 0;
+  color: $color-offwhite;
 }
 
 main {
