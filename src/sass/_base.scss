@@ -38,8 +38,17 @@ main {
 
 section {
     padding: 25px;
+    background-color: $color-offblack;
+    opacity: .5;
+    z-index: 1;
+    margin-right: 30%;
     h2 {
         color: $color-orange;
         margin: 0;
+        opacity: 1;
+    }
+    p {
+        color: $color-offwhite;
+        opacity: 1;
     }
 }
