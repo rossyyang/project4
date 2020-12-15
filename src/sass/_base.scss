@@ -36,8 +36,10 @@ main {
     height: 100vh;
 }
 
-.page-container {
+section {
+    padding: 25px;
     h2 {
         color: $color-orange;
+        margin: 0;
     }
 }
