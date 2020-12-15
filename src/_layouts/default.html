@@ -2,39 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Home</title>
+    <title>Home</title>
 
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="sidenav">
-		<div class="mainnav">
-	  		<a href="#home"> <img src="https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fblacksauce.png?v=1605829269133"> </a>
-	  		<a href="#about"> about </a>
-	  		<a href="#order"> order </a>
-	  		<a href="#biscuit"> biscuit talk </a>
-	  		<a href="#contact"> contact us </a>
-	  	</div>
-	  	<div class="info">
-	  		<h4> Baltimore, MD </h4>
-	  		<h4> info@blacksaucekitchen.com </h4>
-	  	</div>
-	  	<div class="social">
-	  		<a href="#facebook"> img </a>
-	  		<a href="#insta"> img </a>
-	  		<a href="#uncmn"> img </a>
-	  	</div>
+    <div class="sidenav">
+        <div class="mainnav">
+            <a href="#home"> <img src="https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fblacksauce.png?v=1605829269133"> </a>
+            <a href="#about"> about </a>
+            <a href="#order"> order </a>
+            <a href="#biscuit"> biscuit talk </a>
+            <a href="#contact"> contact us </a>
+        </div>
+        <div class="info">
+            <h4> Baltimore, MD </h4>
+            <h4> info@blacksaucekitchen.com </h4>
+        </div>
+        <div class="social">
+            <a href="#facebook"> img </a>
+            <a href="#insta"> img </a>
+            <a href="#uncmn"> img </a>
+        </div>
     </div>
-  </div>
+    </div>
 
-	<main>
-		{{ content | safe }}
-	</main>
+    <main>
+        <section id="page-container">
+            {{ content | safe }}
+        </section>
+    </main>
 
 </body>
+
 </html>
