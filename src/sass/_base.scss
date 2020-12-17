@@ -25,6 +25,15 @@ body {
   left: 0;
   color: $color-offwhite;
   padding: 15px 35px;
+  
+  li {
+    list-style-type: none;
+    
+    a {
+      color: $color-offwhite;
+      text-decoration: none;
+    }
+  }
 }
 
 
