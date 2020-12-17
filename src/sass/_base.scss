@@ -20,37 +20,37 @@ body {
     background-color: $color-grey;
     position: fixed;
     height: 100%;
-    width: 30%;
+    width: 432px;
     top: 0;
     left: 0;
     color: $color-offwhite;
-    padding-top: 15px;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 15px 35px;
 }
 
 main {
     flex: 1 0 auto;
-    padding-left: 30%;
+    padding-left: 432px;
     background-image: url("https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fbs-img1.jpg?v=1605829317131");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
+h2 {
+    color: $color-orange;
+    margin: 0;
+    opacity: 1;
+}
+p {
+    color: $color-offwhite;
+    opacity: 1;
+    padding: 0 30px;
+}
 
 section {
     padding: 25px;
     background-color: $color-offblack;
-    opacity: .5;
     z-index: 1;
     margin-right: 30%;
-    h2 {
-        color: $color-orange;
-        margin: 0;
-        opacity: 1;
-    }
-    p {
-        color: $color-offwhite;
-        opacity: 1;
-    }
+    height: 100vh;
 }
+
