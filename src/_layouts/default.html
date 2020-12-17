@@ -1,27 +1,27 @@
 <!doctype html>
 <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
 
-    <title>Home</title>
+      <link href="/css/styles.css" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css">
+  </head>
 
-    <link href="/css/styles.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css">
-</head>
-
-<body>
+  <body>
     <div class="sidenav">
-        <div class="mainnav">
-                <a href="/home"> <img src="https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fblacksauce.png?v=1605829269133"> </a>
-                <ul>
-                    <li><a href="/about">about</a></li>
-                    <li><a href="/order">order</a></li>
-                    <li><a href="/biscuit">biscuit talk</a></li>
-                    <li><a href="/contact">contact</a></li>
-                </ul>
-        </div>
+      <div class="mainnav">
+        <a href="/home"> <img src="https://cdn.glitch.com/779b971d-9c2d-457f-ac8f-945d722901a7%2Fblacksauce.png?v=1605829269133"> </a>
+        <ul>
+            <li><a href="/about">about</a></li>
+            <li><a href="/order">order</a></li>
+            <li><a href="/biscuit">biscuit talk</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+      </div>
+      <footer>
         <div class="info">
             <h4>Baltimore, MD</h4>
             <h4>info@blacksaucekitchen.com</h4>
@@ -31,14 +31,13 @@
             <a href="#insta"> img </a>
             <a href="#uncmn"> img </a>
         </div>
+      </footer>
     </div>
 
-    <main>
-        <section class="page-container">
-            {{ content | safe }}
-        </section>
-    </main>
-
-</body>
-
+      <main>
+          <section class="page-container">
+              {{ content | safe }}
+          </section>
+      </main>
+  </body>
 </html>
