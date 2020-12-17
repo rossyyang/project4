@@ -8,12 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-@media (max-width: 1024px) {
-    body {
-        background-color: $color-offblack;
-    }
-}
-
 body {
     color: $color-text-body;
     font-family: "Commissioner", sans-serif;
@@ -63,4 +57,10 @@ section {
     z-index: 1;
     margin-right: 30%;
     height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: $color-offblack;
+    }
 }
