@@ -8,6 +8,12 @@ html {
     box-sizing: inherit;
 }
 
+@media (max-width: 1024px) {
+    body {
+        background-color: $color-offblack;
+    }
+}
+
 body {
     color: $color-text-body;
     font-family: "Commissioner", sans-serif;
@@ -25,6 +31,10 @@ body {
     left: 0;
     color: $color-offwhite;
     padding: 15px 35px;
+}
+
+ul {
+    display: block;
 }
 
 main {
