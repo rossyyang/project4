@@ -26,6 +26,9 @@ body {
     color: $color-offwhite;
     padding: 15px 35px;
 }
+ul {
+    display: block;
+}
 
 main {
     flex: 1 0 auto;
