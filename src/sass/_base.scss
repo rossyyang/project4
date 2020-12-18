@@ -72,8 +72,8 @@ main {
     overflow-y: auto;
   }
   
-  section::-webkit-scrollbar {
-    width: 50px;
+  section::-webkit-scrollbar-thumb {
+    background: #000;
   }
 }
 
