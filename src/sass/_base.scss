@@ -84,8 +84,8 @@ section {
     height: 100vh;
 }
 
-@media only screen and (max-width: 1024px) {
-    body {
-        background-color: $color-offblack;
-    }
+@media only screen and (max-width: 375) {
+  main {
+    background-image: none;
+  }
 }
