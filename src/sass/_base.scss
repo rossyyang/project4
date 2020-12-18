@@ -48,11 +48,6 @@ body {
       width: 32%;
     }
   }
-  
-  footer {
-    position: absolute;
-    bottom: 25px;
-  }
 }
 
 main {
@@ -92,5 +87,9 @@ p {
 @media (max-width: 375px) {
   main {
     background-image: none;
+  }
+  
+  .mainnav > ul {
+    display: none;
   }
 }
