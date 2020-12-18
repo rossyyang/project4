@@ -86,7 +86,12 @@ p {
 
 fieldset {
   text-area {
-    background-color: $color-grey;
+    color: $color-grey;
+  }
+  label {
+    color: $color-offwhite;
+  }
+  legend {
     
   }
 }
