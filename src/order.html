@@ -4,3 +4,23 @@ layout: default.html
 
 <h2>Order</h2>
 <p>Please use this to order biscuits!</p>
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Order form:</legend>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" value="John"><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" value="john@email.com"><br>
+      <label for="event">Event Type:</label><br>
+      <input type="text" id="event" name="event" value="birthday party"><br>
+      <label for="guests">Number of Guests:</label><br>
+      <input type="text" id="guests" name="guests" value="4"><br>
+      <label for="location">Location:</label><br>
+      <input type="text" id="location" name="location" value="1300 W. Mount Royal"><br>
+      <label for="date">Date:</label><br>
+      <input type="text" id="date" name="date" value="01/01/2021"><br>
+      <p>Comments:</p>
+      <textarea name="comments" rows="10" cols="30">Any additional comments.</textarea><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
