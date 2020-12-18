@@ -89,11 +89,8 @@ p {
     padding: 0 30px;
 }
 
-
-
-@media only screen and (max-width: 375) {
+@media (max-width: 375px) {
   main {
     background-image: none;
-    padding: 0;
   }
 }
